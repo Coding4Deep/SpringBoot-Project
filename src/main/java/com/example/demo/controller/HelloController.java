@@ -12,4 +12,9 @@ public class HelloController {
     public String sayHello() {
         return "Hello, Spring Boot! 🚀";
     }
+    @GetMapping("/")
+    public String home() {
+    return "Welcome to the homepage!";
+}
+
 }
