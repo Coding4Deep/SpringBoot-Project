@@ -10,11 +10,24 @@ public class HelloController {
 
     @GetMapping("/hello")  // Handles GET requests at /api/hello
     public String sayHello() {
-        return "Hello, Spring Boot! 🚀";
+        return "Hello, Spring Boot! i made some changes 🚀";
     }
     @GetMapping("/")
     public String home() {
     return "Welcome to the homepage!";
 }
 
+}
+
+@RequestMapping("/")  // Base URL for all endpoints in this class
+public class HelloController {
+
+    @GetMapping("/hello")  // Handles GET requests at /api/hello
+    public String sayHello() {
+        return "Hello, user ! How are you today 🚀";
+    }
+    @GetMapping("/")
+    public String home() {
+    return " this site is under working please visit few days later";
+}
 }
