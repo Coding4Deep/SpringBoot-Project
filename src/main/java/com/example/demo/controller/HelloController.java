@@ -18,16 +18,3 @@ public class HelloController {
 }
 
 }
-
-@RequestMapping("/")  // Base URL for all endpoints in this class
-public class HelloController {
-
-    @GetMapping("/hello")  // Handles GET requests at /api/hello
-    public String sayHello() {
-        return "Hello, user ! How are you today 🚀";
-    }
-    @GetMapping("/")
-    public String home() {
-    return " this site is under working please visit few days later";
-}
-}
